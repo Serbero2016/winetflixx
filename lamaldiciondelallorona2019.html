@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://ia601505.us.archive.org/33/items/TonyX/plyr.css"/>
+  <link rel="stylesheet" href="../css/styles_pelis.css">
+  <title>Document</title>
+
+
+</head>
+<body>
+  <P style="grid-column: 1 / span 3; text-align: center; text-decoration: underline 3px; color: whitesmoke; text-transform: uppercase; ">la maldicion de la llorona</P>
+  
+
+  <div>
+    <video id="my-video"  class="plyr" src="https://ia804703.us.archive.org/20/items/la-llorona_202301/1_5003710476924747841.mp4" poster="" >
+    </video>
+  </div>
+  <br>
+
+<div class="container">
+  
+  <div class="year">
+    <img src="https://i.postimg.cc/GpXR1Lgh/image-search-1674262370325.png" alt="">
+    <p>2019</p>
+  </div>
+
+  <div class="time">
+    <img src="https://i.postimg.cc/k4DmJ0LN/Picsart-23-01-20-21-52-29-333.png" alt="">
+    <p>1h 33m</p>
+  </div>
+
+  <div class="like">
+    <img src="https://i.postimg.cc/V6BYvxRd/Picsart-23-01-20-21-58-21-687.png" alt="">
+    <p>7.4/10</p>
+  </div>
+
+  <br>
+  <div class="category">
+    <p>Misterio, Terror</p>
+  </div>
+
+  <p></p>
+  <p></p>
+  <div class="description">
+    <p>La Llorona es una aparición tenebrosa, atrapada entre el Cielo y el Infierno, con un destino terrible sellado por su propia mano. La mera mención de su nombre ha causado terror en todo el mundo durante generaciones. En vida, ahogó a sus hijos en una rabia de celos, arrojándose en el río tras ver como mató a sus hijos violentamente. Ahora sus lágrimas son eternas, letales, y aquellos que escuchan su llamada de muerte en la noche están condenados. Se arrastra en las sombras y ataca a los niños, desesperada por reemplazar a los suyos. A medida que los siglos han pasado, su deseo se ha vuelto más voraz y sus métodos más terroríficos.</p>
+
+  </div>
+
+
+</div>
+  
+  
+<script src="https://cdn.plyr.io/3.6.4/plyr.js"></script>
+<script>
+const controls = [
+'rewind',
+'play',
+'fast-forward',
+'progress',
+'current-time',
+'duration',
+'mute',
+'volume',
+'captions',
+'settings',
+'pip',
+'airplay',
+'fullscreen',
+'restart',
+];
+
+document.addEventListener('DOMContentLoaded', () => {
+const player = Plyr.setup('.plyr', { controls });
+});
+/*//<![CDATA[
+const players = Array.from(document.querySelectorAll('.js-player')).map(player => new Plyr(player));
+//]]>*/
+
+ 
+</script>
+
+
+
+</body>
+</html>

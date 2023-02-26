@@ -1,0 +1,618 @@
+/*CSS NO TOCAR A MENOS QUE SEPAS USARLO*/
+
+* {
+
+    animation-play-state: running;
+    
+    }
+    
+    
+    
+    
+    
+          body{
+    
+              background-color: black;
+    
+              margin: 0;
+    
+              padding: 0;
+    
+          }
+    
+    
+    
+    
+    
+          /*CODIGO PARA LA PRIMERA FILA QUE CONTIENE LA NEVAGACION DE LAS NUEVAS PELICULAS DE ESTRENO O POPULARES*/
+    
+    
+    
+          .container_father{
+    
+              display: grid;
+    
+              grid-template-columns: repeat(3, 1fr);
+    
+              grid-template-rows: repeat(auto, 1fr);
+    
+              grid-gap: 20px;
+    
+          }
+    
+    
+    
+          /*BOTON DE BUSCAR*/
+    
+          .container_father .search{
+    
+              background-color: black;
+    
+              grid-column: 1;
+    
+              text-align: left;
+    
+          }
+    
+    
+    
+          .container_father  .search img{
+    
+              max-width: 100%;
+    
+              width: 40px;
+    
+    
+    
+              border-radius: 3cm;
+    
+          }
+    
+    
+    
+    
+    
+         /*BOTON DE COMPARTIR*/
+    
+         .container_father .share{
+    
+          background-color: black;
+    
+          grid-column: 3;
+    
+          text-align: right;
+    
+         }
+    
+    
+    
+          .container_father .share img{
+    
+              max-width: 100%;
+    
+              width: 40px;
+    
+    
+    
+              border-radius: 3cm;
+    
+          }
+    
+    
+          /*BOTON DE COMPARTIR*/
+    
+         .container_father .notification{
+    
+    background-color: black;
+    
+    grid-column: 2;
+    grid-row: 1;
+    
+    text-align: right;
+    
+    }
+    
+    /*BOTON DE NOTIFICACION*/
+    
+    .container_father .notification img{
+    
+      max-width: 100%;
+    
+      width: 45px;
+      border-radius: 3cm;
+    
+    }
+    
+          
+    
+    
+    
+    
+          .container_father .continue{
+    
+    text-align: right;
+    
+    grid-column:  3;
+    margin-left: 20px;
+    
+    text-align: right;
+    
+    
+    }
+    
+    
+          /*BOTON DE RECOMENDAR*/
+    
+          .container_father .recomend{
+              grid-column: 2;
+              grid-row: 3;
+              padding: 10px;
+              text-align: center;
+              text-decoration: none;
+              border-radius: 4px;
+          }
+    
+          .container_father .recomend img{
+              width: 90px;
+          }
+    
+    
+         
+    
+    /*_______________________________*/
+    
+    
+    
+    
+    
+          .container_father .nav{
+    
+              grid-column: 1 / span 3;
+    
+              grid-row: 1;
+    
+    
+    
+          }
+    
+    
+    
+          .container_father .nav ul{
+    
+              display: flex;
+    
+              flex-wrap: nowrap;
+    
+              overflow-x: scroll;
+              
+    
+          }
+    
+    
+    
+    
+          .container_father .nav ul {
+    overflow-x: scroll;
+    }
+    
+    .container_father .nav ul li{
+    margin: 10px;
+    flex: auto 1 0;
+    list-style: none;
+    }
+    
+    
+    
+    
+    
+    
+          .container_father .nav ul li {
+    position: relative;
+    }
+    
+    .container_father .nav ul li img{
+    max-width: 100%;
+    width: 480px;
+    max-height: 100%;
+    height: 300;
+    border-radius: 10px;
+    
+    }
+    
+    .container_father .nav ul li div {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background-color: rgba(5, 5, 5, 0.391);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    overflow: hidden;
+    }
+    
+    .container_father .nav ul li div p{
+      padding: 10px;
+      overflow-y: scroll;
+      height: 150px;
+    }
+    
+    
+    
+    
+    
+          /*CODIGO PARA CONFIGURAR LA SECCION DE PELIS*/
+    
+    
+    
+    
+          .container_father  h2{
+    
+              grid-column: 1 / span 3;
+    
+              grid-row: auto;
+    
+              font-size: 0.9rem;
+    
+              font-family:Arial, Helvetica, sans-serif;
+    
+              font-weight:900;
+    
+    
+    
+              text-align: center;
+    
+              text-transform: uppercase;
+    
+    
+    
+              box-shadow: 1px 2px 1px 2px ;
+    
+              
+    
+    
+    
+          }
+    
+    
+    
+          .container_father .peliculas .peli{
+    
+              flex: auto 1 0;
+    
+          }
+    
+    
+    
+          .container_father .peliculas .peli img{
+    
+              max-width: 100%;
+    
+              width: 150px;
+    
+              max-height: 100%;
+    
+              height: 180px;
+    
+    
+    
+              margin: 10px;
+    
+              border-radius: 8px;
+    
+          }
+    
+    
+          
+    
+    
+    
+    
+    
+          /*______________________*/
+    
+        
+    
+          /*ESTRENOS*/
+          
+          .container_father .peliculas{
+    
+    grid-column: 1 / span 3;
+    
+    grid-row: auto;
+    
+    
+    
+    display: flex;
+    
+    flex-wrap: nowrap;
+    
+    overflow-x: scroll;
+    
+    }
+    
+          /*SERIES*/
+          .container_father .peliculas2{
+    
+              grid-column: 1 / span 3;
+    
+              grid-row: auto;
+    
+              
+    
+              display: flex;
+    
+              flex-wrap: nowrap;
+    
+              overflow-x: scroll;
+              
+    
+          }
+    
+          
+    
+          
+    
+    
+    
+    
+          /*TERROR*/
+          .container_father .peliculas3{
+    
+              grid-column: 1 / span 3;
+    
+              grid-row: auto;
+    
+              display: flex;
+    
+              flex-wrap: nowrap;
+    
+              overflow-x: scroll;
+    
+          }
+    
+    
+    
+          /*ANIMADA*/
+          .container_father .peliculas4{
+    
+              grid-column: 1 / span 3;
+    
+              grid-row: auto;
+    
+              display: flex;
+    
+              flex-wrap: nowrap;
+    
+              overflow-x: scroll;
+    
+          }
+    
+    
+          /*ACCION*/
+          .container_father .peliculas5{
+    
+    grid-column: 1 / span 3;
+    
+    grid-row: auto;
+    
+    display: flex;
+    
+    flex-wrap: nowrap;
+    
+    overflow-x: scroll;
+    
+    }
+    
+    /*COMICS*/
+    .container_father .peliculas6{
+    
+    grid-column: 1 / span 3;
+    
+    grid-row: auto;
+    
+    display: flex;
+    
+    flex-wrap: nowrap;
+    
+    overflow-x: scroll;
+    
+    }
+    
+    /*FAMILIAR*/
+    .container_father .peliculas7{
+    
+    grid-column: 1 / span 3;
+    
+    grid-row: auto;
+    
+    display: flex;
+    
+    flex-wrap: nowrap;
+    
+    overflow-x: scroll;
+    
+    }
+    
+    
+    /*CRIMENES*/
+    .container_father .peliculas8{
+    
+    grid-column: 1 / span 3;
+    
+    grid-row: auto;
+    
+    display: flex;
+    
+    flex-wrap: nowrap;
+    
+    overflow-x: scroll;
+    
+    }
+    
+    
+    /*COMEDIA/ROMANCE*/
+    .container_father .peliculas9{
+    
+    grid-column: 1 / span 3;
+    
+    grid-row: auto;
+    
+    display: flex;
+    
+    flex-wrap: nowrap;
+    
+    overflow-x: scroll;
+    
+    }
+    
+    /*COMEDIA/ROMANCE*/
+    .container_father .peliculas10{
+    
+    grid-column: 1 / span 3;
+    
+    grid-row: auto;
+    
+    display: flex;
+    
+    flex-wrap: nowrap;
+    
+    overflow-x: scroll;
+    
+    }
+    
+    
+          /*__________________________*/
+    
+    
+    
+          .container_father  h2{
+    
+              grid-column: 1 / span 3;
+    
+              grid-row: auto;
+    
+              font-size: 0.9rem;
+    
+              font-family:Arial, Helvetica, sans-serif;
+    
+              font-weight:900;
+              
+              color: white;
+    
+    
+    
+              text-align: left;
+    
+              text-transform: uppercase;
+    
+    
+    
+              box-shadow: 1px 2px 1px 2px  red;
+    
+          }
+    
+    
+    
+          .container_father .peli{
+    
+              flex: auto 1 0;
+    
+          }
+    
+    
+    
+          .container_father  .peli img{
+    
+              max-width: 100%;
+    
+              width: 150px;
+    
+              max-height: 100%;
+    
+              height: 200px;
+    
+    
+    
+              margin: 10px;
+    
+              border-radius: 8px;
+    
+          }
+    
+    
+          @media screen and (max-width: 680px) {
+    
+    
+              .container_father .nav ul li img{
+    
+    max-width: 100%;
+    
+    width: 350px;
+    
+    max-height: 100%;
+    
+    height: 250px;
+    
+    
+    
+    border-radius: 10px;
+    
+    }
+    
+    
+    .container_father .nav ul li div {
+    position: absolute;
+    bottom: 7px;
+    left: 10px;
+    right: 10px;
+    background-color: rgba(5, 5, 5, 0.391);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 0.7rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    overflow: hidden;
+    }
+    
+    .container_father .nav ul li div p{
+      padding: 6px;
+      overflow-y: scroll;
+      height: 100px;
+    }
+    
+    
+    
+              .container_father .peli{
+    
+              flex: auto 1 0;
+    
+                 }               
+    
+    
+    
+                 .container_father  .peli img{
+    
+                 max-width: 100%;
+    
+                 width: 100px;
+    
+                 max-height: 100%;
+    
+                 height: 150px;
+    
+    
+    
+                 margin: 10px;
+                 
+                 border-radius: 8px;
+    
+    }
+              
+          }
